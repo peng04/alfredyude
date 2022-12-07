@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <title>Portfolio</title>
+    </head>
+    <body>
+	
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <a href="https://alfredyude-d7d14.firebaseapp.com/" >
+                    <img src="assets/img/back.jpg" alt="">
+                    </a>
+              
+    
+                <div>
+ 
+                    <a href="#" class="nav__logo">ALFRED YUDE</a>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+			
+        </header>
+
+   
+           <!--===== WORK =====-->
+         
+
+            <div class="containers">
+            
+            
+            <div class="image-containers">
+
+                <div class="image"><img src="assets/img/m1.png" alt=""></div>
+                <div class="image"><img src="assets/img/m2.png" alt=""></div>
+                <div class="image"><img src="assets/img/m3.png" alt=""></div>
+                <div class="image"><img src="assets/img/m4.png" alt=""></div>
+                <div class="image"><img src="assets/img/m5.png" alt=""></div>
+                <div class="image"><img src="assets/img/m6.png" alt=""></div>
+                <div class="image"><img src="assets/img/m7.png" alt=""></div>
+             
+               
+          
+            </div>
+            <div class="popup-image">
+                <span>&times;</span>
+      
+                <img src="assets/img/p1.jpg" alt="">
+                
+            </div>
+            </div>
+
+         
+            <script>
+
+
+                document.querySelectorAll('.image-containers img').forEach(image=>{
+                    image.onclick=()=>{
+                    document.querySelector('.popup-image').style.display='block';
+                    document.querySelector('.popup-image img').src=image.getAttribute('src');
+                }
+                });
+                document.querySelector('.popup-image span').onclick =() =>{
+                    document.querySelector('.popup-image').style.display='none';
+                }
+                
+                        </script>
+                
+                
+
+
+
+     
+
+         <!--===== FOOTER =====-->
+		
+        
+    
+         <footer class="footer">
+            <p class="footer__title">ALFRED YUDE</p>
+		
+      
+            <div class="footer__social">
+                <a href="https://www.facebook.com/alfred.yud" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p>&#169; 2021 copyright all right reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+
+
+
+    </body>
+</html>

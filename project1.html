@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <title>Portfolio</title>
+    </head>
+    <body>
+	
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <a href="https://alfredyude-d7d14.firebaseapp.com/" >
+                    <img src="assets/img/back.jpg" alt="">
+                    </a>
+              
+    
+                <div>
+ 
+                    <a href="#" class="nav__logo">ALFRED YUDE</a>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+			
+        </header>
+
+   
+           <!--===== WORK =====-->
+         
+
+            <div class="containers">
+            
+            
+            <div class="image-containers">
+
+                <div class="image"><img src="assets/img/01.png" alt=""></div>
+                <div class="image"><img src="assets/img/02.png" alt=""></div>
+                <div class="image"><img src="assets/img/03.png" alt=""></div>
+                <div class="image"><img src="assets/img/04.png" alt=""></div>
+                <div class="image"><img src="assets/img/05.png" alt=""></div>
+                <div class="image"><img src="assets/img/06.png" alt=""></div>
+                <div class="image"><img src="assets/img/07.png" alt=""></div>
+                <div class="image"><img src="assets/img/08.png" alt=""></div>
+                <div class="image"><img src="assets/img/09.png" alt=""></div>
+                <div class="image"><img src="assets/img/10.png" alt=""></div>
+                <div class="image"><img src="assets/img/11.png" alt=""></div>
+                <div class="image"><img src="assets/img/12.png" alt=""></div>
+                <div class="image"><img src="assets/img/13.png" alt=""></div>
+                <div class="image"><img src="assets/img/14.png" alt=""></div>
+                <div class="image"><img src="assets/img/15.png" alt=""></div>
+                <div class="image"><img src="assets/img/16.png" alt=""></div>
+                <div class="image"><img src="assets/img/17.png" alt=""></div>
+                <div class="image"><img src="assets/img/18.png" alt=""></div>
+                <div class="image"><img src="assets/img/19.png" alt=""></div>
+                <div class="image"><img src="assets/img/20.png" alt=""></div>
+
+
+           
+          
+            </div>
+            <div class="popup-image">
+                <span>&times;</span>
+                <p> nyeyedjakhwdkahwdjklhadklhaklwdhklawhdlkahwdhawlkdhlawhdklahwdklahwdklha</p>
+                <img src="assets/img/4.jpg" alt="">
+                
+            </div>
+            </div>
+
+         
+
+
+
+
+        <script>
+
+
+document.querySelectorAll('.image-containers img').forEach(image=>{
+    image.onclick=()=>{
+    document.querySelector('.popup-image').style.display='block';
+    document.querySelector('.popup-image img').src=image.getAttribute('src');
+}
+});
+document.querySelector('.popup-image span').onclick =() =>{
+    document.querySelector('.popup-image').style.display='none';
+}
+
+        </script>
+
+
+         <!--===== FOOTER =====-->
+		
+        
+    
+         <footer class="footer">
+            <p class="footer__title">ALFRED YUDE</p>
+		
+      
+            <div class="footer__social">
+                <a href="https://www.facebook.com/alfred.yud" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p>&#169; 2022 copyright all right reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+
+
+
+    </body>
+</html>
